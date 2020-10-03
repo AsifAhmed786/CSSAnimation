@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* min-height: 100vh; */
+}
+
+div.divs{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 1s ease-in-out;
+    /* position: absolute; */
+    /* left: -100px; */
+    background: transparent;
+    /* display: none; */
+    
+    /* display: none; */
+    /* display: block; */
+}
+
+
+div.change{
+    background-color: blue;
+    display: block;
+    /* transform: rotate(45deg); */
+    transform: translateX(200px);
+}

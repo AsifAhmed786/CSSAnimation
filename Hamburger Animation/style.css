@@ -29,7 +29,7 @@ body{
     background: whitesmoke;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
-    transition: all .99s ease-in-out;   /*animation timing control*/
+    transition: all .99s ease-in-out;   /*animation timing control / css property change duration and effect*/
 
 }
 
@@ -46,12 +46,12 @@ body{
 }
 
 .menu-btn_burger::before{
-    transform: translateY(-16px);
+    transform: translateY(-18px);   /*translating main button with before and after translate location kahan par lagana hai existing element ko translate karne k baad*/
 
 }
 
 .menu-btn_burger::after{
-    transform: translateY(16px);
+    transform: translateY(18px);
 }
 
 
@@ -64,9 +64,9 @@ body{
 }
 
 .menu-btn.open .menu-btn_burger::before{
-    transform: rotate(45deg) translate(35px, -35px);
+    transform: rotate(45deg) translate(35px, -35px);    /*re-aligning cross lines*/
 }
 
 .menu-btn.open .menu-btn_burger::after{
-    transform: rotate(-45deg) translate(35px, 35px);
+    transform: rotate(-45deg) translate(35px, 35px);    /*re-aligning cross lines*/
 }
