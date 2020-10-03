@@ -1,0 +1,17 @@
+div.trans{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    transition: all 5s ease-in-out;
+}
+
+div.trans:hover{
+    width: 500px;
+    height: 500px;
+}
+.btn{
+    transition: all .1s ease-in-out;
+}
+.btn:hover{
+       width: 500px;
+}
