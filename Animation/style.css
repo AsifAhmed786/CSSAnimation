@@ -1,0 +1,25 @@
+.maindiv{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    transition: all .5s ease-in-out;
+}
+
+.maindiv::before,
+.maindiv::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    transform: translateY(200px);
+}
+
+.update{
+    transform: rotate(45deg);
+    background-color: red !important;
+}
+
